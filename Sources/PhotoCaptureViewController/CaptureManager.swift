@@ -26,7 +26,7 @@ class CaptureManager: NSObject {
     let previewLayer: AVCaptureVideoPreviewLayer
     let viewfinderMode: CaptureManagerViewfinderMode
 
-    var flashMode: AVCaptureDevice.FlashMode = .auto
+    var flashMode: AVCaptureDevice.FlashMode = .off
 
     var hasFlash: Bool {
         return cameraDevice?.hasFlash ?? false && cameraDevice?.isFlashAvailable ?? false
